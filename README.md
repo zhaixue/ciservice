@@ -10,3 +10,6 @@
 ### .env文件使用：
     1. composer install  安装需要的第三方包
 	2. 在Index.php 引入该配置，OK
+### 自动加载
+    1. userinfo = S('Test1')->getuser();//调用service层的函数
+    2. $a = M('admin')->getAdminInfoById(333);//调用model层的函数
