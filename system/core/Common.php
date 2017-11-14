@@ -907,3 +907,17 @@ if (! function_exists('dumpe')) {
 
     }
 }
+function M($model){
+    global $CI;
+    $model=$model.'_model';
+    $CI->load->model($model);
+    $obj = $CI->$model;
+    return $obj;
+}
+function S($service){
+    global $CI;
+    $service=$service.'_service';
+    $CI->load->service($service);
+    $obj = $CI->$service;
+    return $obj;
+}
